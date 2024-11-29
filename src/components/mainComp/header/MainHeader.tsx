@@ -21,6 +21,7 @@ function MainHeader() {
           <NavLink href="/">Home</NavLink>
           <NavLink href="/lobby">Lobby</NavLink>
           <NavLink href="/scholar">Scholar</NavLink>
+          <NavLink href="/saved">Saved</NavLink>
         </ul>
       </nav>
 
