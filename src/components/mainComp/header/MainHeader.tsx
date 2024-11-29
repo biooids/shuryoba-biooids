@@ -5,7 +5,7 @@ import biooid_logo from "@/assets/logos/biooid.jpg";
 
 function MainHeader() {
   return (
-    <header className="main_header flex p-3 items-center justify-between backdrop-blur-xl sticky top-0">
+    <header className="main_header rounded-xl bg-white bg-opacity-5 flex w-full p-3 items-center justify-between backdrop-blur-xl sticky top-0 ">
       <div>
         <Image
           src={shuryoba_logo}

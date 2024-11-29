@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import MainHeader from "@/components/mainComp/header/MainHeader";
-import MainFooter from "@/components/mainComp/footer/MainFooter";
-import SideNav from "@/components/mainComp/sideNav/SideNav";
+// import MainHeader from "@/components/mainComp/header/MainHeader";
+// import MainFooter from "@/components/mainComp/footer/MainFooter";
 
 export const metadata: Metadata = {
   title: "Shuryoba",
@@ -16,14 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-amber-950 text-amber-100 flex ">
-        <SideNav />
-        <section className="w-full bg-white">
-          <MainHeader />
-          {children}
-          <MainFooter />
-        </section>
-      </body>
+      <body className="bg-amber-950 text-amber-100 flex ">{children}</body>
     </html>
   );
 }
