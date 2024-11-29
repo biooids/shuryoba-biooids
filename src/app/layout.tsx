@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import MainHeader from "@/components/mainComp/MainHeader";
-import MainFooter from "@/components/mainComp/MainFooter";
+import MainHeader from "@/components/mainComp/header/MainHeader";
+import MainFooter from "@/components/mainComp/footer/MainFooter";
 
 export const metadata: Metadata = {
   title: "Shuryoba",
@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-amber-950 text-amber-100 flex flex-col gap-5">
         <MainHeader />
         {children}
         <MainFooter />
